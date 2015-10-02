@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Auctionmaid_Matrxrate</name>
+ <channel>connect.magentocommerce.com/community</channel>
+ <summary>Multiple Table Rates via CSV. Filter by country, region,city, zipcode. Numeric Postcode ranges, and enhanced pattern matching supported. Ability to exclude items from free shipping, and specify collection only.</summary>
+ <description>Supports following:
+
+- multiple table rates
+- country, region, city, postcode filtering
+- partial postcode filtering, including pattern matching
+- numerical postcode ranges
+- option to exclude items from free shipping
+- collection only option</description>
+ <lead>
+  <name>Karen Baker</name>
+  <user>birches</user>
+  <email>sales@webshopapps.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-10-26</date>
+ <time>05:27:31</time>
+ <version>
+  <release>4.0.0</release>
+  <api>4.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/osl-3.0.php)">OSL v3.0</license>
+ <notes>1 - The export csv option is currently disabled. This is so the extension does not conflict with the existing tablerates.  There are no plans to resolve this - if you need to view the data look in phpmyadmin.</notes>
+ <contents>
+  <dir name="/">
+   <dir name="modules">
+    <file md5sum="ac8b13f26402b2f0e7f6b22c3430fec8" name="Webshopapps_Matrixrate.xml" role="mageetc" />
+   </dir> <!-- /modules -->
+   <dir name="Webshopapps\Matrixrate\Adminhtml\Model\System\Config\Backend\Shipping">
+    <file md5sum="b61a484d0568651aa94b61ef8d84b24a" name="Matrixrate.php" role="magecommunity" />
+   </dir> <!-- /Webshopapps\Matrixrate\Adminhtml\Model\System\Config\Backend\Shipping -->
+   <dir name="Webshopapps\Matrixrate\Adminhtml\Model\System\Config\Source\Shipping">
+    <file md5sum="37fecc431ab65ac9952ab951292f7815" name="Matrixrate.php" role="magecommunity" />
+   </dir> <!-- /Webshopapps\Matrixrate\Adminhtml\Model\System\Config\Source\Shipping -->
+   <dir name="Webshopapps\Matrixrate\etc">
+    <file md5sum="9c5c8d01dce6f7e036bb4d1e53706741" name="config.xml" role="magecommunity" />
+    <file md5sum="b60e7f9efdb31976471c91e04ac556f3" name="system.xml" role="magecommunity" />
+   </dir> <!-- /Webshopapps\Matrixrate\etc -->
+   <dir name="Webshopapps\Matrixrate\Helper">
+    <file md5sum="97307283fd4c85ed72a699ab4be68661" name="Data.php" role="magecommunity" />
+   </dir> <!-- /Webshopapps\Matrixrate\Helper -->
+   <dir name="Webshopapps\Matrixrate\Model\Carrier">
+    <file md5sum="e3d52565200a038a851a50e4484e6ad8" name="Matrixrate.php" role="magecommunity" />
+   </dir> <!-- /Webshopapps\Matrixrate\Model\Carrier -->
+   <dir name="Webshopapps\Matrixrate\Model\Mysql4\Carrier">
+    <file md5sum="aa5b77ed44de4b973eecccadbe887232" name="Matrixrate.php" role="magecommunity" />
+   </dir> <!-- /Webshopapps\Matrixrate\Model\Mysql4\Carrier -->
+   <dir name="Webshopapps\Matrixrate\Model\Mysql4\Carrier\Matrixrate">
+    <file md5sum="def8a766d0d73df07e5a4a4e5bb26422" name="Collection.php" role="magecommunity" />
+   </dir> <!-- /Webshopapps\Matrixrate\Model\Mysql4\Carrier\Matrixrate -->
+   <dir name="Webshopapps\Matrixrate\sql\matrixrate_setup">
+    <file md5sum="52a413f99ce3d571a067cdfb677bbf32" name="mysql4-install-2.0.1.php" role="magecommunity" />
+    <file md5sum="b6530f7e95e610db357ed46bc23629b9" name="mysql4-install-2.0.2.php" role="magecommunity" />
+    <file md5sum="b6530f7e95e610db357ed46bc23629b9" name="mysql4-upgrade-2.0.1-2.0.2.php" role="magecommunity" />
+   </dir> <!-- /Webshopapps\Matrixrate\sql\matrixrate_setup -->
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+    <max>6.0.0</max>
+   </php>
+   <pearinstaller>
+    <min>1.6.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+</package>

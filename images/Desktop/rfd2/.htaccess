@@ -1,0 +1,27 @@
+AuthUserFile /var/www/optimisedemo.co.uk/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Website Preview"
+AuthType Basic
+<Limit GET POST>
+require valid-user
+</Limit>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+
+# Old Site Redirects
+redirect 301 /index.html http://www.cambridgeinvestments.co.uk/
+redirect 301 /background.html http://www.cambridgeinvestments.co.uk/about-us/background
+redirect 301 /people.html http://www.cambridgeinvestments.co.uk/about-us/people
+# redirect 301 /investment-management.html http://www.cambridgeinvestments.co.uk/
+redirect 301 /contact.html http://www.cambridgeinvestments.co.uk/contact

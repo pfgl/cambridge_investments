@@ -1,0 +1,15 @@
+.row {
+overflow: hidden;
+}
+
+#twitter_update_list li {
+padding-left: 100px;
+}
+
+#contact address {
+overflow: hidden;
+}
+
+li#email, li#telephone {
+padding-left: 20px;
+}

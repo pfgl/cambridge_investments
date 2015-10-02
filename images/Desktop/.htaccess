@@ -1,0 +1,23 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+redirect 301 http://www.http://www.bni-focus.co.uk/about.aspx http://www.http://www.bni-focus.co.uk/about
+redirect 301 http://www.http://www.bni-focus.co.uk/members.aspx http://www.http://www.bni-focus.co.uk/members
+redirect 301 http://www.http://www.bni-focus.co.uk/training.aspx http://www.http://www.bni-focus.co.uk/training
+redirect 301 http://www.http://www.bni-focus.co.uk/news.aspx http://www.http://www.bni-focus.co.uk/news
+redirect 301 http://www.http://www.bni-focus.co.uk/visit_us.aspx http://www.http://www.bni-focus.co.uk/visit-us
+redirect 301 http://www.http://www.bni-focus.co.uk/location.aspx http://www.http://www.bni-focus.co.uk/location
+redirect 301 http://www.http://www.bni-focus.co.uk/contact_us.aspx http://www.http://www.bni-focus.co.uk/contact-us
+redirect 301 http://www.http://www.bni-focus.co.uk/contact http://www.http://www.bni-focus.co.uk/contact-us
+redirect 301 http://www.http://www.bni-focus.co.uk/substitutes.aspx http://www.http://www.bni-focus.co.uk/members
+
