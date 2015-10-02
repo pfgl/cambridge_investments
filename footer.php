@@ -68,10 +68,10 @@
 		<p><small>Cambridge Investments Limited is a subsidiary of Perspective Financial Group Limited.</small></p>
 		<p><small><?php bloginfo('name'); ?> is authorised and regulated by the Financial Conduct Authority</small></p>
 
-    + <p><small>Should you have cause to complain, and you are not satisfied with our response to your complaint, you may be able to refer it to the Financial Ombudsman Service, which can be contacted as follows:</small></p>
-+      <p><small>The Financial Ombudsman Service Exchange Tower, London, E14 9SR</small></p>
-+      <p><small>Tel: 0800 023 4567 or 0300 123 9 123</small></p>
-+     <p><small><a href="http://www.financial-ombudsman.org.uk">www.financial-ombudsman.org.uk</a></small></p>
+    <p><small>Should you have cause to complain, and you are not satisfied with our response to your complaint, you may be able to refer it to the Financial Ombudsman Service, which can be contacted as follows:</small></p>
+   <p><small>The Financial Ombudsman Service Exchange Tower, London, E14 9SR</small></p>
+   <p><small>Tel: 0800 023 4567 or 0300 123 9 123</small></p>
+ <p><small><a href="http://www.financial-ombudsman.org.uk">www.financial-ombudsman.org.uk</a></small></p>
 
 		<ul class="footer-links">
 			<li><a href="/sitemap.xml">Sitemap</a> | </li>
